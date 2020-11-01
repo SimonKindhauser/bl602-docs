@@ -14,12 +14,12 @@ jobs:
         
       - name: install requirements
         run: |
-          cd $GITHUB_WORKSPACE/bl602-docs/src
+          cd src
           pip install --requirement=requirements.txt
     
       - name: make html documentation
         run: |
-          cd $GITHUB_WORKSPACE/bl602-docs/src/en,
+          cd src/en,
           make html
           
       - name: deploy to github pages
@@ -29,4 +29,3 @@ jobs:
           BRANCH: gh-pages
           FOLDER: docs
           CLEAN: true
-          
