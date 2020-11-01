@@ -15,15 +15,15 @@ BL602 SDK Starter Guide
 -  打开MSYS2并安装make，输入命令：\ ``pacman -S make``
    后回车，并根据提示直到安装完成
 
-   .. figure:: imgs/image1.png
+   .. figure:: ../imgs/image1.png
       :alt:
 
-   .. figure:: imgs/image2.png
+   .. figure:: ../imgs/image2.png
       :alt:
 
 -  打开MSYS2的安装目录并将SDK源代码放入\ ``home``\ 目录中的用户名文件夹下，下图中为\ ``igor``\ 文件夹
 
-   .. figure:: imgs/image3.png
+   .. figure:: ../imgs/image3.png
       :alt:
 
    **注意**\ ：实例中使用的账户是\ ``igor``\ ，实际操作时可以根据\ ``home``\ 目录下的文件名确定当前用户名
@@ -31,15 +31,15 @@ BL602 SDK Starter Guide
 -  安装解压软件，命令：\ ``pacman -S unzip``\ ，还可选安装如下组件：\ ``pacman -S git``\ 、\ ``pacman -S tmux``
    等
 
-   .. figure:: imgs/image4.png
+   .. figure:: ../imgs/image4.png
       :alt:
 
-   .. figure:: imgs/image5.png
+   .. figure:: ../imgs/image5.png
       :alt:
 
 -  对源文件压缩包进行解压，命令：\ ``unzip bl_iot_sdk.zip``
 
-   .. figure:: imgs/image6.png
+   .. figure:: ../imgs/image6.png
       :alt:
 
    **注意**\ ：\ ``unzip``\ 之后文件名需要根据实际拿到的SDK文件名作出相应的修改
@@ -49,10 +49,10 @@ BL602 SDK Starter Guide
 
 模块的相关引脚连接如下图所示，其中图一是模块的正面图，其标号1处用跳线帽短接，标号2处将左边两根排针短接，标号3处将上面的两根排针短接；图二是模块的背面图，将 ``IO8`` 和 ``LOW`` 两根排针短接。
 
-.. figure:: imgs/image13.png
+.. figure:: ../imgs/image13.png
    :alt:
 
-.. figure:: imgs/image14.png
+.. figure:: ../imgs/image14.png
    :alt:
 
 代码的编译和烧录
@@ -60,12 +60,12 @@ BL602 SDK Starter Guide
 
 -  进入需要编译的工程目录，命令：\ ``cd customer_app/bl602_demo_event``
 
-   .. figure:: imgs/image7.png
+   .. figure:: ../imgs/image7.png
       :alt:
 
 -  进行编译，命令：\ ``./genromap``
 
-   .. figure:: imgs/image8.png
+   .. figure:: ../imgs/image8.png
       :alt:
 
 bin文件下载
@@ -75,17 +75,17 @@ bin文件下载
 
 -  ``chip type``\ 选择\ ``BL602/604``\ ，打开后界面参数参考下图配置：
 
-   .. figure:: imgs/image9.png
+   .. figure:: ../imgs/image9.png
       :alt:
 
    点击\ ``download``\ ，出现如下图所示表明下载成功：
 
-   .. figure:: imgs/image10.png
+   .. figure:: ../imgs/image10.png
       :alt:
 
 -  打开串口终端，点击 ``settings`` 配置为如下图所示，其中 ``DTR`` 需要勾选上， ``RTS`` 不勾选。
 
-   .. figure:: imgs/image12.png
+   .. figure:: ../imgs/image12.png
       :alt:
 
 
